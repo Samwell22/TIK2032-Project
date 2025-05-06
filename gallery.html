@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Gallery | WEBSITE VAREL</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <header>
@@ -12,7 +13,7 @@
       <h1>WEBSITE VAREL</h1>
       <nav>
         <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="gallery.html" class="active">Gallery</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
       </nav>
@@ -21,42 +22,56 @@
   </header>
 
   <main class="gallery-page">
-    <h2>Galeri</h2>
+    <h2>Gallery</h2>
+    <p>gambar hanya pemanis:</p>
 
-    <!-- Slideshow Container -->
-    <div class="slideshow-container">
-      <div class="slide fade">
-        <img src="Images/foto1.jpg" alt="Foto 1">
+    <div class="gallery-grid">
+      <!-- Baris Pertama -->
+      <div class="gallery-item">
+        <img src="Images/foto1.jpg" alt="Foto 1" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="Images/foto2.jpg" alt="Foto 2">
+      <div class="gallery-item">
+        <img src="Images/foto2.jpg" alt="Foto 2" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="Images/foto3.jpg" alt="Foto 3">
+      <div class="gallery-item">
+        <img src="Images/foto3.jpg" alt="Foto 3" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="Images/foto4.jpg" alt="Foto 4">
+      <!-- Baris Kedua -->
+      <div class="gallery-item">
+        <img src="Images/foto4.jpg" alt="Foto 4" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="Images/foto5.jpg" alt="Foto 5">
+      <div class="gallery-item">
+        <img src="Images/foto5.jpg" alt="Foto 5" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-      <div class="slide fade">
-        <img src="Images/foto6.jpg" alt="Foto 6">
+      <div class="gallery-item">
+        <img src="Images/foto6.jpg" alt="Foto 6" loading="lazy">
+        <div class="img-overlay">
+          <i class="fas fa-search-plus"></i>
+        </div>
       </div>
-
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
-    <!-- Dots -->
-    <div class="dots-container">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-      <span class="dot" onclick="currentSlide(4)"></span>
-      <span class="dot" onclick="currentSlide(5)"></span>
-      <span class="dot" onclick="currentSlide(6)"></span>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn">&times;</span>
+      <img class="lightbox-img" id="lightboxImage">
+      <button class="nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+      <button class="nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
     </div>
   </main>
 
