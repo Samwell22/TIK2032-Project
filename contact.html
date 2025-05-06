@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Contact | WEBSITE VAREL</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | WEBSITE VAREL</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <div class="navbar">
-            <h1>WEBSITE VAREL</h1>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="blog.html">Blog</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-            <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+  <header>
+    <div class="navbar">
+      <h1>WEBSITE VAREL</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <span>varelsumampouw026@student.unsrat.ac.id</span>
         </div>
-    </header>
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <span>@vrwell_22</span>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <span>0897 1616 331</span>
+        </div>
+      </div>
 
-    <main class="contact-page">
-        <h2>Hubungi Saya</h2>
-
-        <!-- Bagian kontak sosial -->
-        <div class="contact-list">
-            <div class="contact-item">
-                <a href="mailto:varelsumampouw026@student.unsrat.ac.id">
-                    <img src="images/email-icon.png" alt="Email Icon" class="contact-icon" />
-                    <span>varelsumampouw026@student.unsrat.ac.id</span>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="https://instagram.com/vrwell_22" target="_blank">
-                    <img src="images/instagram-icon.png" alt="Instagram Icon" class="contact-icon" />
-                    <span>@vrwell_22</span>
-                </a>
-            </div>
-            <div class="contact-item">
-                <a href="https://wa.me/628971616331" target="_blank">
-                    <img src="images/whatsapp-icon.png" alt="WhatsApp Icon" class="contact-icon" />
-                    <span>0897 1616 331</span>
-                </a>
-            </div>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <input type="text" id="name" name="name" required>
+          <label for="name">Your Name</label>
+        </div>
+        
+        <div class="form-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Your Email</label>
+        </div>
+        
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Your Message</label>
         </div>
 
-        <!-- Formulir Kontak -->
-        <div class="contact-form">
-            <h3>Kirim Pesan</h3>
-            <form action="#" method="post">
-                <label for="name">Nama</label>
-                <input type="text" id="name" name="name" required />
+        <button type="submit" class="submit-btn">
+          <span>Send Message</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </form>
+    </div>
+  </main>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required />
+  <footer>
+    <p>&copy; 2025 Varel. All rights reserved.</p>
+  </footer>
 
-                <label for="message">Pesan</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Varel. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
