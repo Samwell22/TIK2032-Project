@@ -8,29 +8,40 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-  <header>
-    <div class="navbar">
-      <h1>WEBSITE VAREL</h1>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
-    </div>
-  </header>
 
-  <main class="hero">
-    <div class="hero-content">
-      <h2>Selamat Datang di WEBSITE VAREL</h2>
-      <p>Website ini dibangun menggunakan HTML, CSS, JavaScript, PHP, dan MySQL. Menyajikan tampilan yang simpel, rapi, dan elegan untuk kamu jelajahi.</p> 
-    </div>
-  </main>
+  <div class="fullscreen-video">
+    <video autoplay muted loop id="bg-video">
+      <source src="Images/vid1.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+  </div>
 
-  <footer>
-    <p>&copy; 2025 Varel. All rights reserved.</p>
-  </footer>
+  <!-- Konten Website -->
+  <div class="page-content">
+    <header class="transparent-header">
+      <div class="navbar">
+        <h1>WEBSITE VAREL</h1>
+        <nav>
+          <a href="index.html" class="active">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="darkModeToggle" title="Toggle Dark Mode">🌓</button>
+      </div>
+    </header>
+
+    <main class="hero">
+      <div class="hero-content animate-fade">
+        <h2 class="animate-slide">Selamat Datang di WEBSITE VAREL</h2>
+        <p class="animate-slide delay-1">Website ini dibangun menggunakan HTML, CSS, JavaScript, PHP, dan MySQL. Menyajikan tampilan yang simpel, rapi, dan elegan untuk kamu jelajahi.</p> 
+      </div>
+    </main>
+
+    <footer class="transparent-footer">
+      <p>&copy; 2025 Varel. All rights reserved.</p>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
